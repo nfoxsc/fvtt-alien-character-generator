@@ -9412,21 +9412,31 @@ function rollAttributes(stat) {
     charAttributes.push(roll);
     attributesScores[stat] = roll;
     attributesList.shift(stat);
-    return roll;
   } else if (charAttributes.length >= 3 && parseInt(statTotal) < 14) {
     roll = 14 - parseInt(statTotal);
     statTotal  += roll;
     charAttributes.push(roll);
     attributesScores[stat] = roll;
     attributesList.shift(stat);
-    return roll;
   } else {
     let roll = Math.floor(Math.random() * 3) + 2;
     statTotal  += roll;
     charAttributes.push(roll);
     attributesScores[stat] = roll;
     attributesList.shift(stat);
-    return roll;
+  }
+}
+
+// Random Skills
+function rollSkills(skill){
+  if (charSkills.length < 2) {
+    let skillRoll = Math.floor(Math.random() * 3) + 2;
+    skillsTotal += skillRoll;
+    charSkills.push(skillRoll);
+  } else {
+    skillRoll = 10 - parseInt(skillsTotal);
+    skillsTotal  += skillRoll;
+    charSkills.push(skillRoll);
   }
 }
 
@@ -9487,6 +9497,14 @@ for(var i = 1; i <= 4; i++) {
 // Cash
 const charCash = cash(charCareer);
 
+// Skills
+let skillsList = careerList[charCareer]["keySkills"];
+let charSkills = [];
+let skillsTotal = 0;
+for(var i = 0; i < 3; i++){
+    rollSkills(skillsList[i]);
+}
+
 //  Attributes
 let attributesList = ["Strength", "Wits", "Agility", "Empathy"]
 let attributesScores = [];
@@ -9534,8 +9552,7 @@ let messageContent = `
   <p> - ${charItems[3]}</p>
   <p>Cash: ${charCash}</p>
   <p>Signature Item: ${charSignatureItem}</p>
-  <p>${attributesList}</p>
-  <p>${attributesScores}</p>
+  <p>Attributes:</p>
   <table>
     <tr>
       <th>STR</th>
@@ -9550,7 +9567,10 @@ let messageContent = `
       <td>${attributesScores["Empathy"]}</td>
     </tr>
   </table>
-  <p>${statTotal}</p>
+  <p>Skills:</p>
+  <p>${careerList[charCareer]["keySkills"][0]} - ${charSkills[0]}</p>
+  <p>${careerList[charCareer]["keySkills"][1]} - ${charSkills[1]}</p>
+  <p>${careerList[charCareer]["keySkills"][2]} - ${charSkills[2]}</p>
 `
 
 // create the message
