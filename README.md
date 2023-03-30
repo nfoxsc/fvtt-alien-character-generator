@@ -3,6 +3,8 @@
 Basic Character generator for the Alien RPG game via Foundry VTT. Copy the macro code into a new macro and hit play. It's not perfect, this is my first Javascript. Its gross, I know, but it works for my needs and maybe your's too.
 
 To-Dos:
+ - Look into adding Items and Talents into proper place within the character sheet.
+     - May be needs an alternate version if installed system does not have the official modules
  - Get better at scripting
  - Clean up Code
 
