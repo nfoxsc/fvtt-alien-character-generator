@@ -452,7 +452,7 @@ let newNPC = await Actor.create(newValues);
 newNPC.sheet.render(true);
 
 let messageContent = `
-  <p>New CPlayer Sheet: ${careerTalentList}</p>
+  <p>New CPlayer Sheet: ${charName}</p>
 `
 
 // create the message
