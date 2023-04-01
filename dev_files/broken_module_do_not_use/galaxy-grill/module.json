@@ -7,7 +7,7 @@
     "name": "nfoxsc"
     }
     ],
-  "version": "1.0.0",
+  "version": "1.0.2",
   "compatibility": {
     "minimum": "10",
     "verified": "10"
@@ -18,5 +18,8 @@
   },
   "manifest": "https://raw.githubusercontent.com/nfoxsc/fvtt-alien-character-generator/main/dev_files/broken_module_do_not_use/galaxy-grill/module.json",
   "download": "https://raw.githubusercontent.com/nfoxsc/fvtt-alien-character-generator/main/dev_files/broken_module_do_not_use/galaxy-grill/galaxy-grill.zip",
-  "esmodules": ["scripts/main.js"]
+  "esmodules": [
+    "scripts/main.js",
+    "scripts/genertor.js"
+  ]
 }

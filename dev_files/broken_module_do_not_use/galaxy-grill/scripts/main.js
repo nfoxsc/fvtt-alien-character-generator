@@ -1,25 +1,12 @@
 // add button to side menu
 Hooks.on("renderActorDirectory", (_app, html) => {
   if (game.user.isGM) {
-    const generateButton = jQuery(`<button class="generator-btn"><i class="fas fa-fire"></i> Generate Player Sheet</button>`);
+    const button = jQuery(`<button class="generator-btn"><i class="fas fa-pepper-hot"></i> Order the Special</button>`);
     html.find(".generator-btn").remove();
 
-    html.find(".directory-footer").append(generateButton);
+    html.find(".directory-footer").append(button);
 
-    generateButton.on("click", (ev) => {
-      ev.preventDefault();
-      let generator = new NPCGenerator({
-        classesJSON: classesJSON,
-        languagesJSON: languagesJSON,
-        namesJSON: namesJSON,
-        personalityTraitsJSON: personalityTraitsJSON,
-        plotHooksJSON: plotHooksJSON,
-        professionsJSON: professionsJSON,
-        racesJSON: racesJSON,
-        sexJSON: sexJSON,
-        listJSON: listJSON,
-      });
-      generator.render(true);
+          button.on("click", (ev) => {
     });
   }
 });
