@@ -18,7 +18,5 @@
   },
   "manifest": "https://raw.githubusercontent.com/nfoxsc/fvtt-alien-character-generator/main/dev_files/broken_module_do_not_use/galaxy-grill/module.json",
   "download": "https://raw.githubusercontent.com/nfoxsc/fvtt-alien-character-generator/main/dev_files/broken_module_do_not_use/galaxy-grill/galaxy-grill.zip",
-  "scripts": [
-    "scripts/generator.js"
-  ]
+  "esmodules": ["scripts/main.js"]
 }
