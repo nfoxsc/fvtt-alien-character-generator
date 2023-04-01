@@ -14,13 +14,8 @@
   },
   "packs": [],
   "relationships": {
-  "systems": [{
-    "id": "",
-    "type": "system",
-    "manifest": "https://raw.githubusercontent.com/nfoxsc/fvtt-alien-character-generator/main/dev_files/broken_module_do_not_use/galaxy-grill/module.json",
-    "compatibility": {
-      "verified": ""
-    }
-  }],
+    "systems": [{ "id": "alienrpg" }]
+  },
+  "manifest": "https://raw.githubusercontent.com/nfoxsc/fvtt-alien-character-generator/main/dev_files/broken_module_do_not_use/galaxy-grill/module.json",
   "scripts": []
 }
