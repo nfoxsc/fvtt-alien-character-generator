@@ -1,0 +1,26 @@
+{
+  "id": "galaxy-grill",
+  "title": "Gus's Galaxy Grill",
+  "description": "Welcome to Gus's Galaxy Grill! Where the Space Special looks a little familiar... ",
+  "authors": [
+    {
+    "name": "nfoxsc"
+    }
+    ],
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10"
+  },
+  "packs": [],
+  "relationships": {
+  "systems": [{
+    "id": "",
+    "type": "system",
+    "manifest": "",
+    "compatibility": {
+      "verified": ""
+    }
+  }],
+  "scripts": []
+}
