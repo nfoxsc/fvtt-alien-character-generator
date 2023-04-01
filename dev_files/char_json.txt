@@ -1,0 +1,686 @@
+{
+   "_id" : "zoT9cyUuGsW9irFT",
+   "_stats" : {
+      "coreVersion" : "10.291",
+      "createdTime" : 1661954249739,
+      "lastModifiedBy" : "3eAStCv0v21fqZVU",
+      "modifiedTime" : 1674623626992,
+      "systemId" : "alienrpg",
+      "systemVersion" : "3.0.4"
+   },
+   "effects" : [],
+   "flags" : {},
+   "folder" : "TjQMMbcmIJsLcvuc",
+   "img" : "icons/svg/mystery-man.svg",
+   "items" : [
+      {
+         "_id" : "hC2txvkCMQ0rFIz5",
+         "_stats" : {
+            "coreVersion" : null,
+            "createdTime" : null,
+            "lastModifiedBy" : null,
+            "modifiedTime" : null,
+            "systemId" : null,
+            "systemVersion" : null
+         },
+         "effects" : [],
+         "flags" : {
+            "core" : {
+               "sourceId" : "Item.6uqCKcMcKncW9LvE"
+            }
+         },
+         "folder" : "Zc8xFR1GEHjoUOj3",
+         "img" : "modules/alienrpg-corerules/images/icons/backpack.svg",
+         "name" : "Hi-beam Flashlight",
+         "ownership" : {
+            "M2aZuGY0mCdDk004" : 3,
+            "YEoPmwinvi5w1FW6" : 3,
+            "default" : 0
+         },
+         "sort" : 0,
+         "system" : {
+            "attributes" : {
+               "airsupply" : {
+                  "label" : "Number",
+                  "value" : 0
+               },
+               "comment" : {
+                  "label" : "Text",
+                  "value" : "Removes the effect of darkness in a zone."
+               },
+               "cost" : {
+                  "label" : "Number",
+                  "value" : "US$45.00"
+               },
+               "food" : {
+                  "label" : "Number",
+                  "value" : 0
+               },
+               "notes" : {
+                  "notes" : ""
+               },
+               "power" : {
+                  "label" : "Stress",
+                  "value" : 0
+               },
+               "quantity" : {
+                  "value" : 1
+               },
+               "water" : {
+                  "label" : "Number",
+                  "value" : 0
+               },
+               "weight" : {
+                  "label" : "Number",
+                  "value" : 0.5
+               }
+            },
+            "header" : {
+               "active" : false,
+               "type" : {
+                  "label" : "Text",
+                  "value" : "3"
+               }
+            },
+            "modifiers" : {
+               "attributes" : {
+                  "agl" : {
+                     "label" : "Agility",
+                     "value" : 0
+                  },
+                  "emp" : {
+                     "label" : "Empathy",
+                     "value" : 0
+                  },
+                  "health" : {
+                     "label" : "Health",
+                     "value" : 0
+                  },
+                  "str" : {
+                     "label" : "Strength",
+                     "value" : 0
+                  },
+                  "stress" : {
+                     "label" : "Stress",
+                     "value" : 0
+                  },
+                  "wit" : {
+                     "label" : "Wits",
+                     "value" : 0
+                  }
+               },
+               "skills" : {
+                  "closeCbt" : {
+                     "ability" : "str",
+                     "label" : "Close Combat",
+                     "value" : 0
+                  },
+                  "command" : {
+                     "ability" : "emp",
+                     "label" : "Command",
+                     "value" : 0
+                  },
+                  "comtech" : {
+                     "ability" : "wit",
+                     "label" : "Comtech",
+                     "value" : 0
+                  },
+                  "heavyMach" : {
+                     "ability" : "str",
+                     "label" : "Heavy Machinery",
+                     "value" : 0
+                  },
+                  "manipulation" : {
+                     "ability" : "emp",
+                     "label" : "Manipulation",
+                     "value" : 0
+                  },
+                  "medicalAid" : {
+                     "ability" : "emp",
+                     "label" : "Medical Aid",
+                     "value" : 0
+                  },
+                  "mobility" : {
+                     "ability" : "agl",
+                     "label" : "Mobility",
+                     "value" : 0
+                  },
+                  "observation" : {
+                     "ability" : "wit",
+                     "label" : "Observation",
+                     "value" : 0
+                  },
+                  "piloting" : {
+                     "ability" : "agl",
+                     "label" : "Piloting",
+                     "value" : 0
+                  },
+                  "rangedCbt" : {
+                     "ability" : "agl",
+                     "label" : "Ranged Combat",
+                     "value" : 0
+                  },
+                  "stamina" : {
+                     "ability" : "str",
+                     "label" : "Stamina",
+                     "value" : 0
+                  },
+                  "survival" : {
+                     "ability" : "wit",
+                     "label" : "Survival",
+                     "value" : 0
+                  }
+               }
+            }
+         },
+         "type" : "item"
+      },
+      {
+         "_id" : "LAxvq4ux4OSHlqqJ",
+         "_stats" : {
+            "coreVersion" : null,
+            "createdTime" : null,
+            "lastModifiedBy" : null,
+            "modifiedTime" : null,
+            "systemId" : null,
+            "systemVersion" : null
+         },
+         "effects" : [],
+         "flags" : {
+            "core" : {
+               "sourceId" : "Compendium.alienrpg-corerules.alienrpg-talents-career.zwGlDH45rhp7x5li"
+            }
+         },
+         "folder" : "37EKYBQasc1PJcmM",
+         "img" : "modules/alienrpg-corerules/images/icons/fire-dash.svg",
+         "name" : "Calming Presence",
+         "ownership" : {
+            "023AT5ERR8Ij00Wy" : 3,
+            "M2aZuGY0mCdDk004" : 3,
+            "default" : 0
+         },
+         "sort" : 0,
+         "system" : {
+            "attributes" : {
+               "flag" : {
+                  "label" : "Flag",
+                  "value" : 0
+               }
+            },
+            "general" : {
+               "career" : {
+                  "label" : "career",
+                  "value" : "6"
+               },
+               "comment" : {
+                  "label" : "Text",
+                  "value" : "People find themselves relaxing whenever you are around. Once per Turn, you may reduce the Stress Level of another character within Short range by one, in addition to the normal stress recovery. In order to use this talent, you and any character that hopes to benefit from your calming presence must be in a relatively safe place. You cannot use this talent on yourself."
+               }
+            },
+            "notes" : {
+               "notes" : ""
+            }
+         },
+         "type" : "talent"
+      },
+      {
+         "_id" : "mpHDEH3OBTDaCjHK",
+         "_stats" : {
+            "coreVersion" : null,
+            "createdTime" : null,
+            "lastModifiedBy" : null,
+            "modifiedTime" : null,
+            "systemId" : null,
+            "systemVersion" : null
+         },
+         "effects" : [],
+         "flags" : {
+            "core" : {
+               "sourceId" : "Compendium.alienrpg-corerules.alienrpg-weapons.sqBRI4Yva4EmCROX"
+            }
+         },
+         "folder" : "j8bpPrnRYXCuPEzy",
+         "img" : "modules/alienrpg-corerules/images/icons/357-magnum-revolver.png",
+         "name" : ".357 Magnum Revolver",
+         "ownership" : {
+            "M2aZuGY0mCdDk004" : 3,
+            "YEoPmwinvi5w1FW6" : 3,
+            "default" : 0
+         },
+         "sort" : 0,
+         "system" : {
+            "attributes" : {
+               "bonus" : {
+                  "label" : "Number",
+                  "value" : 1
+               },
+               "class" : {
+                  "label" : "Text",
+                  "value" : "Pistol"
+               },
+               "comment" : {
+                  "label" : "Text",
+                  "value" : "A classic high calibre revolver, equally popular amongst both Frontier Marshals and lowlifes."
+               },
+               "cost" : {
+                  "label" : "Number",
+                  "value" : "$300.00"
+               },
+               "damage" : {
+                  "label" : "Number",
+                  "value" : 2
+               },
+               "power" : {
+                  "label" : "Number",
+                  "value" : 0
+               },
+               "quantity" : {
+                  "value" : 1
+               },
+               "range" : {
+                  "label" : "Text",
+                  "value" : "3"
+               },
+               "rounds" : {
+                  "label" : "Number",
+                  "value" : 0
+               },
+               "weight" : {
+                  "label" : "Number",
+                  "value" : 1
+               }
+            },
+            "header" : {
+               "active" : false,
+               "type" : {
+                  "label" : "Text",
+                  "value" : "1"
+               }
+            },
+            "notes" : {
+               "notes" : "<p>A classic high calibre revolver, equally popular amongst both Frontier Marshals and lowlifes.</p>"
+            }
+         },
+         "type" : "weapon"
+      },
+      {
+         "_id" : "Zn1C3mUlV2tAP6qW",
+         "_stats" : {
+            "coreVersion" : null,
+            "createdTime" : null,
+            "lastModifiedBy" : null,
+            "modifiedTime" : null,
+            "systemId" : null,
+            "systemVersion" : null
+         },
+         "effects" : [],
+         "flags" : {
+            "core" : {
+               "sourceId" : "Compendium.alienrpg-corerules.alienrpg-weapons.YGoDepo6K2F9803m"
+            }
+         },
+         "folder" : "j8bpPrnRYXCuPEzy",
+         "img" : "modules/alienrpg-corerules/images/icons/armat-model-37a2-12-gauge-pump-action.png",
+         "name" : "Armat Model 37A2 12 Gauge Pump Action",
+         "ownership" : {
+            "M2aZuGY0mCdDk004" : 3,
+            "YEoPmwinvi5w1FW6" : 3,
+            "default" : 0
+         },
+         "sort" : 0,
+         "system" : {
+            "attributes" : {
+               "bonus" : {
+                  "label" : "Number",
+                  "value" : 2
+               },
+               "class" : {
+                  "label" : "Text",
+                  "value" : "Rifle"
+               },
+               "comment" : {
+                  "label" : "Text",
+                  "value" : "Armor doubled.\n\nA classic pump-action combat shotgun, the M37A2 is an optional weapon in use by the USCMC. Reliable and direct, the '37 is the gun you want to keep handy for close encounters."
+               },
+               "cost" : {
+                  "label" : "Number",
+                  "value" : "US$500.00"
+               },
+               "damage" : {
+                  "label" : "Number",
+                  "value" : 3
+               },
+               "power" : {
+                  "label" : "Number",
+                  "value" : 0
+               },
+               "quantity" : {
+                  "value" : 1
+               },
+               "range" : {
+                  "label" : "Text",
+                  "value" : "2"
+               },
+               "rounds" : {
+                  "label" : "Number",
+                  "value" : 0
+               },
+               "weight" : {
+                  "label" : "Number",
+                  "value" : 1
+               }
+            },
+            "header" : {
+               "active" : false,
+               "type" : {
+                  "label" : "Text",
+                  "value" : "1"
+               }
+            },
+            "notes" : {
+               "notes" : null
+            }
+         },
+         "type" : "weapon"
+      }
+   ],
+   "name" : "JONATHON OTAKA",
+   "ownership" : {
+      "3eAStCv0v21fqZVU" : 3,
+      "H5UgzpFc3Xvp8xLJ" : 3,
+      "KTgXQYOvdxaGdceE" : 3,
+      "M2aZuGY0mCdDk004" : 3,
+      "default" : 0
+   },
+   "prototypeToken" : {
+      "actorLink" : true,
+      "alpha" : 1,
+      "bar1" : {
+         "attribute" : "header.health"
+      },
+      "bar2" : {
+         "attribute" : "header.stress"
+      },
+      "detectionModes" : [],
+      "displayBars" : 20,
+      "displayName" : 20,
+      "disposition" : 1,
+      "flags" : {},
+      "height" : 1,
+      "light" : {
+         "alpha" : 1,
+         "angle" : 360,
+         "animation" : {
+            "intensity" : 5,
+            "reverse" : false,
+            "speed" : 5,
+            "type" : null
+         },
+         "attenuation" : 0.5,
+         "bright" : 0,
+         "color" : null,
+         "coloration" : 1,
+         "contrast" : 0,
+         "darkness" : {
+            "max" : 1,
+            "min" : 0
+         },
+         "dim" : 0,
+         "luminosity" : 0.5,
+         "saturation" : 0,
+         "shadows" : 0
+      },
+      "lockRotation" : false,
+      "name" : "JONATHON OTAKA",
+      "randomImg" : false,
+      "rotation" : 0,
+      "sight" : {
+         "angle" : 360,
+         "attenuation" : 0.1,
+         "brightness" : 1,
+         "color" : null,
+         "contrast" : 0,
+         "enabled" : true,
+         "range" : 0,
+         "saturation" : 0,
+         "visionMode" : "basic"
+      },
+      "texture" : {
+         "offsetX" : 0,
+         "offsetY" : 0,
+         "rotation" : 0,
+         "scaleX" : 1,
+         "scaleY" : 1,
+         "src" : "icons/svg/mystery-man.svg",
+         "tint" : null
+      },
+      "width" : 1
+   },
+   "sort" : 0,
+   "system" : {
+      "adhocitems" : "<p><span style=\"color: #b0e0e6; text-align: justify; background-color: rgba(0, 0, 0, 0.05);\">Handcuffs</span></p>",
+      "attributes" : {
+         "agl" : {
+            "label" : "Agility",
+            "mod" : 3,
+            "value" : 3
+         },
+         "emp" : {
+            "label" : "Empathy",
+            "mod" : 4,
+            "value" : 4
+         },
+         "str" : {
+            "label" : "Strength",
+            "mod" : 4,
+            "value" : 4
+         },
+         "wit" : {
+            "label" : "Wits",
+            "mod" : 5,
+            "value" : 5
+         }
+      },
+      "consumables" : {
+         "air" : {
+            "max" : 5,
+            "min" : 0,
+            "value" : 0
+         },
+         "food" : {
+            "max" : 5,
+            "min" : 0,
+            "value" : 0
+         },
+         "power" : {
+            "max" : 5,
+            "min" : 0,
+            "value" : 0
+         },
+         "water" : {
+            "max" : 5,
+            "min" : 0,
+            "value" : 0
+         }
+      },
+      "general" : {
+         "agenda" : {
+            "label" : "agenda",
+            "value" : "(Marshal)\nOtaka is in his late 40s and Novgorod is his seventh station posting. Heâs good at this job, and in particular, at training-up his deputies to cope with the unique crimes and challenges on the Outer Rim. He is the kind of person who remembers everyoneâs name and knows everyoneâs business. If ever caught with his back against the wall, plenty of station staff would volunteer to help him out."
+         },
+         "appearance" : {
+            "label" : "appearance",
+            "value" : ""
+         },
+         "armor" : {
+            "max" : 10,
+            "value" : 0
+         },
+         "career" : {
+            "label" : "career",
+            "value" : "2"
+         },
+         "cash" : {
+            "label" : "Number",
+            "value" : "0"
+         },
+         "critInj" : {
+            "value" : ""
+         },
+         "dehydrated" : {
+            "calculatedMax" : 1,
+            "max" : 1,
+            "value" : 0
+         },
+         "exhausted" : {
+            "calculatedMax" : 1,
+            "max" : 1,
+            "value" : 0
+         },
+         "freezing" : {
+            "calculatedMax" : 1,
+            "max" : 1,
+            "value" : 0
+         },
+         "panic" : {
+            "calculatedMax" : 1,
+            "lastRoll" : 0,
+            "max" : 1,
+            "value" : 0
+         },
+         "radiation" : {
+            "calculatedMax" : 10,
+            "max" : 10,
+            "value" : 0
+         },
+         "relOne" : {
+            "label" : "relOne",
+            "value" : ""
+         },
+         "relTwo" : {
+            "label" : "relTwo",
+            "value" : ""
+         },
+         "sigItem" : {
+            "label" : "sigItem",
+            "value" : ""
+         },
+         "sp" : {
+            "max" : 3,
+            "value" : 0
+         },
+         "starving" : {
+            "max" : 1,
+            "value" : 0
+         },
+         "xp" : {
+            "calculatedMax" : 20,
+            "max" : 20,
+            "value" : 0
+         }
+      },
+      "header" : {
+         "health" : {
+            "label" : "Health",
+            "max" : 4,
+            "mod" : 0,
+            "value" : 4
+         },
+         "npc" : false,
+         "stress" : {
+            "label" : "Stress",
+            "max" : 10,
+            "mod" : 0,
+            "value" : 0
+         }
+      },
+      "notes" : "<p><span style=\"color: #b0e0e6; text-align: justify; background-color: rgba(0, 0, 0, 0.05);\">(Marshal)</span></p>\n<p style=\"box-sizing: border-box; user-select: text; color: #b0e0e6; text-align: justify; background-color: rgba(0, 0, 0, 0.05);\">Otaka is in his late 40s and Novgorod is his seventh station posting. He&rsquo;s good at this job, and in particular, at training-up his deputies to cope with the unique crimes and challenges on the Outer Rim. He is the kind of person who remembers everyone&rsquo;s name and knows everyone&rsquo;s business. If ever caught with his back against the wall, plenty of station staff would volunteer to help him out.</p>",
+      "skills" : {
+         "closeCbt" : {
+            "ability" : "str",
+            "description" : "Close Combat",
+            "label" : "Close Combat",
+            "mod" : 6,
+            "value" : 2
+         },
+         "command" : {
+            "ability" : "emp",
+            "description" : "Command",
+            "label" : "Command",
+            "mod" : 4,
+            "value" : 0
+         },
+         "comtech" : {
+            "ability" : "wit",
+            "description" : "Comtech",
+            "label" : "Comtech",
+            "mod" : 6,
+            "value" : 1
+         },
+         "heavyMach" : {
+            "ability" : "str",
+            "description" : "Heavy Machinery",
+            "label" : "Heavy Machinery",
+            "mod" : 4,
+            "value" : 0
+         },
+         "manipulation" : {
+            "ability" : "emp",
+            "description" : "Manipulation",
+            "label" : "Manipulation",
+            "mod" : 4,
+            "value" : 0
+         },
+         "medicalAid" : {
+            "ability" : "emp",
+            "description" : "Medical Aid",
+            "label" : "Medical Aid",
+            "mod" : 6,
+            "value" : 2
+         },
+         "mobility" : {
+            "ability" : "agl",
+            "description" : "Mobility",
+            "label" : "Mobility",
+            "mod" : 3,
+            "value" : 0
+         },
+         "observation" : {
+            "ability" : "wit",
+            "description" : "Observation",
+            "label" : "Observation",
+            "mod" : 9,
+            "value" : 4
+         },
+         "piloting" : {
+            "ability" : "agl",
+            "description" : "Piloting",
+            "label" : "Piloting",
+            "mod" : 3,
+            "value" : 0
+         },
+         "rangedCbt" : {
+            "ability" : "agl",
+            "description" : "Ranged Combat",
+            "label" : "Ranged Combat",
+            "mod" : 5,
+            "value" : 2
+         },
+         "stamina" : {
+            "ability" : "str",
+            "description" : "Stamina",
+            "label" : "Stamina",
+            "mod" : 4,
+            "value" : 0
+         },
+         "survival" : {
+            "ability" : "wit",
+            "description" : "Survival",
+            "label" : "Survival",
+            "mod" : 5,
+            "value" : 0
+         }
+      }
+   },
+   "type" : "character"
+}
