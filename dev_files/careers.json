@@ -1,0 +1,146 @@
+{
+    "COLONIAL MARINE": {
+        "menuItemNumber": 1,
+        "keyAttribute": "Strength",
+        "keySkills": ["closeCbt", "stamina", "rangedCbt"],
+        "careerTalents": ["Banter", "Overkill", "Past the Limit"],
+        "agenda": ["You are a decorated hero, you need to defend your reputation. At all costs.", "You once helped cover up a war crime—no-one must ever know.", "The death of your buddy has spooked you — now you secretly fear combat and confrontation. You need to overcome your fear."],
+        "appearance": ["Crew cut", "Arm tattoo", "Scar", "Cold eyes", "Cocky grin", "Personalized body armor"],
+        "signatureItem": ["Bullet that you survived", "Lost friend’s dog tags", "Trophy from a defeated enemy"],
+        "gear":
+        {
+            "item1": ["M41A Pulse Rifle", "M56A2 Smart Gun"],
+            "item2": ["M314 Motion Tracker", "2 G2 Electroshock Grenades"],
+            "item3": ["IRC MK.35 Pressure Suit", "M3 Personnel Armor"],
+            "item4": ["Signal Flare", "Deck of cards"]
+        }
+    },
+    "COLONIAL MARSHAL": {
+        "menuItemNumber": 2,
+        "keyAttribute": "Wits",
+        "keySkills": ["observation", "manipulation", "rangedCbt"],
+        "careerTalents": ["Authority", "Investigator", "Subdue"],
+        "agenda": ["Your longtime partner betrayed you and defected to a crime syndicate. Get even.", "You dream of turning in the badge and settling down in peace. Work towards it.", "You did a bad thing in the past and it has come back to haunt you. You need to decide what you are made of"],
+        "appearance": ["Chewing a toothpick", "Cigarette in mouth", "Impressive mustache", "Worn cap", "Scar across face", "Graying hair", "Crew cut", "Inquisitive gaze", "Old leather jacket"],
+        "signatureItem": ["Photo of a loved one", "Dented flask with an inscription on the front", "News clipping of an unsolved case"],
+        "gear":
+        {
+            "item1": [".357 Magnum Revolver", "Armat Model 37A2 12 gauge pump-action"],
+            "item2": ["Binoculars", "Hi-beam flashlight"],
+            "item3": ["Personal medkit", "Stun baton"],
+            "item4": ["D6 doses Neversleep pills", "Hand radio"]
+        }
+    },
+    "COMPANY AGENT": {
+        "menuItemNumber": 3,
+        "keyAttribute": "Wits",
+        "keySkills": ["comtech", "observation", "manipulation  "],
+        "careerTalents": ["Cunning", "Personal Safety", "Take Control"],
+        "agenda": ["You are greedy for power and never miss an opportunity to get ahead.", "The Company is holding back information from you. What? And why?", "You are a nice guy, but the Company is blackmailing you to do its dirty work. Get even."],
+        "appearance": ["Icy glare", "Disarming smile", "Expensive Rolex", "Unique signet ring", "Tanned", "Elaborate hairstyle", "Emotionless stare", "Monogrammed silk tie"],
+        "signatureItem": ["Letter of corporate authorization", "Divorce papers", "Employee of the Year award"],
+        "gear":
+        {
+            "item1": ["Leather briefcase", "Chrome briefcase"],
+            "item2": ["Gold-plated pen", "Rolex watch"],
+            "item3": ["Data transmitter card with corporate clearance level", "M4A3 Service Pistol"],
+            "item4": ["D6 doses Neversleep", "D6 doses Naproleve"]
+        }
+    },
+    "MEDIC": {
+        "menuItemNumber": 5,
+        "keyAttribute": "Empathy",
+        "keySkills": ["mobility", "observation", "medicalAid"],
+        "careerTalents": ["Calming Presence", "Compassion", "Field Surgeon"],
+        "agenda": ["You are addicted to a strong painkiller. Protect your stash—and your secret.", "You have some unusual (but classified) medical reports that the Company is looking for. Find out why they are so important.", "You’ve sworn an oath never to take a life and you mean it."],
+        "appearance": ["Sympathetic smile", "Short", "tidy hair", "Warm", "caring eyes", "Dark bags under eyes", "Fidgeting hands", "Calm and gentle voice", "Cold", "unsympathetic stare", "Spectacles", "White coat"],
+        "signatureItem": ["Framed medical certificate.", "Letter from son or daughter.", "Last psych evaluation: (All clear at last.)"],
+        "gear":
+        {
+            "item1": ["Surgical kit", "IRC MK.50 compression suit"],
+            "item2": ["D6 doses Naproleve", "D6 doses Neversleep"],
+            "item3": ["Personal medkit", "D6 doses experimental X-Drugs"],
+            "item4": ["Samani E-Series watch", "Hand radio"]
+        }
+    },
+    "KID": {
+        "menuItemNumber": 4,
+        "keyAttribute": "Agility",
+        "keySkills": ["mobility", "survival", "observation"],
+        "careerTalents": ["Beneath Notice", "Dodge", "Nimble"],
+        "agenda": ["You want to find an adult you can trust—really trust.", "You have no family left. Make sure you never end up alone again.", "No one gives you anything to do, so explore, try things out, make your own entertainment."],
+        "appearance": ["Grubby and unkempt", "Trendy sneakers that light up", "Denim jeans", "torn at the knees", "T-Shirt with band logo", "Cargo shorts", "Ponytail", "Bored expression", "Baseball cap"],
+        "signatureItem": ["Lunchbox covered in stickers", "Favorite doll", "action figure", "Bracelet made by older sibling"],
+        "gear":
+        {
+            "item1": ["Fishing line", "Laser pointer"],
+            "item2": ["Magnet", "Radio-controlled car"],
+            "item3": ["Yo-yo", "Electronic handheld game"],
+            "item4": ["Personal locator beacon", "Coloring pens"]
+        }
+    },
+    "OFFICER": {
+        "menuItemNumber": 7,
+        "keyAttribute": "Empathy",
+        "keySkills": ["rangedCbt", "command", "manipulation"],
+        "careerTalents": ["Field commander", "Influence", "Pull Rank"],
+        "agenda": ["You come from an officer family. You need to gain promotion an award—soon.", "You messed up in the past. Avoid taking the blame for any more mission screw-ups.", "Mistakes are deadly so don’t let anyone under your watch screw up. Make sure they understand why."],
+        "appearance": ["Hair in a crew cut", "or tied-back", "Serious", "intense expression", "Spotless uniform", "Overworked and “strung-out”", "Stiff body posture", "Relaxed and soothing voice", "Jumpsuit with mission patch", "Impatiently taps a foot"],
+        "signatureItem": ["Ship’s cat", "Letter of recommendation", "ICC Commercial Flight Officer license"],
+        "gear":
+        {
+            "item1": ["M4A3 Service Pistol", "Rexim RXF-M5 EVA Pistol"],
+            "item2": ["Samani E-Series watch", "Binoculars"],
+            "item3": ["M314 motion tracker", "IRC MK.50 compression suit"],
+            "item4": ["Seegson P-DAT", "IFF transponder"]
+        }
+    },
+    "PILOT": {
+        "menuItemNumber": 8,
+        "keyAttribute": "Agility",
+        "keySkills": ["piloting", "rangedCbt", "comtech "],
+        "careerTalents": ["Full Throttle", "Like the Back of Your Hand", "Reckless"],
+        "agenda": ["It’s about pushing the limit. Taking a chance. Taking risks—so take a risk.", "You’re stubborn and don’t like to back down even if your friends might get hurt.", "You’re a loner always happier when you can do a task without relying on others."],
+        "appearance": ["Arrogant walk", "Steely blue eyes", "Multi-pocket flight suit", "Sunglasses", "Previous mission patches", "Deadpan expression", "Chews gum", "Skeptical look"],
+        "signatureItem": ["Dashboard dancer", "Pilot’s logbook", "Pilot shades"],
+        "gear":
+        {
+            "item1": ["M4A3 service pistol", "PR-PUT uplink terminal"],
+            "item2": ["Hand radio", "D6 flares"],
+            "item3": ["Maintenance jack", "Seegson P-DAT"],
+            "item4": ["Seegson system diagnostic device", "IRC MK.50 compression suit"]
+        }
+    },
+    "ROUGHNECK": {
+        "menuItemNumber": 9,
+        "keyAttribute": "Strength",
+        "keySkills": ["heavyMach", "stamina", "closeCbt"],
+        "careerTalents": ["Resilient", "The Long Haul", "True Grit"],
+        "agenda": ["You are a compulsive thrill-seeker. If there is a risk to take you’ll step up and try it.", "You once sacrificed your family for the job. Now you won’t let your friends down—ever.", "Downtime matters. If you can grab a can of Aspen beer (or even Souta Dry though only if you’re desperate) and some time alone you’re happy."],
+        "appearance": ["Tattoos", "Scar", "Broken nose", "Mirthless eyes", "Smirking face", "Loud laugh", "Bruised and calloused hands", "Eyes hidden behind safety goggles", "Filthy boots that clomp loudly when you walk", "Wild hair"],
+        "signatureItem": ["Tool belt", "Photo of partner", "Crucifix", "other religious symbol"],
+        "gear":
+        {
+            "item1": ["Cutting torch", "Watsumi DV-303 bolt gun"],
+            "item2": ["D6 doses Hydr8tion", "Maintenance jack"],
+            "item3": ["Stash of hard liquor", "IRC MK.50 compression suit"],
+            "item4": ["Hi-beam flashlight", "Seegson C-Series magnetic tape recorder"]
+        }
+    },
+    "SCIENTIST": {
+        "menuItemNumber": 10,
+        "keyAttribute": "Wits",
+        "keySkills": ["observation", "survival", "comtech"],
+        "careerTalents": ["Analysis", "Breakthrough", "Inquisitive"],
+        "agenda": ["Your last project was stolen from you. Now you keep many of your findings secret.", "You hate authority and go out of your way to be uncooperative if possible.", "You find it hard to delegate to others even if it means taking on extra work."],
+        "appearance": ["Unkempt", "untidy appearance", "Stained lab coat", "Nervous manner", "Hands constantly shoved in pockets", "Tidy", "well-trimmed hair", "Thoughtful gaze", "Clears throat before speaking", "Bleary", "overworked eyes"],
+        "signatureItem": ["Albert Einstein Award", "Unfinished scientific paper", "Blackmail letters"],
+        "gear":
+        {
+            "item1": ["Digital video camera", "Hand radio"],
+            "item2": ["Seegson P-DAT", "Neuro visor"],
+            "item3": ["Seegson System Diagnostic Device", "Personal Data Transmitter"],
+            "item4": ["M314 motion tracker", "Personal medkit"]
+        }
+    }
+};

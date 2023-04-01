@@ -151,12 +151,6 @@ const careerList = {
     }
 };
 
-const raceList = {
-    "character": [
-        "Male", "Female"
-    ],
-    "synthetic": "Non Binary"
-};
 
 let skillList = {
     "heavyMach": {
@@ -248,12 +242,12 @@ function dictRandomValue(dict) {
 };
 
 // Random Item From List
-function list_random(list) {
+function listRandom(list) {
     return list[Math.floor((Math.random() * list.length))];
 };
 
 function nameGenerator() {
-  name = list_random(nameList["First"]).concat(" ", list_random(nameList["Last"]));
+  name = listRandom(nameList["First"]).concat(" ", listRandom(nameList["Last"]));
   return name;
 };
 
@@ -312,16 +306,6 @@ function rollCareerSkills(skill) {
     skillList[skill]["value"] += skillRoll;
 };
 
-function sex(race) {
-    let result;
-    if (race == "character") {
-        result = list_random(raceList["character"]);
-    } else {
-        result = raceList[race];
-    }
-    return result;
-};
-
 function cash(career) {
     const upper = ["COMPANY AGENT", "OFFICER"]
     const middle = ["COLONIAL MARINE", "COLONIAL MARSHAL", "MEDIC", "PILOT", "ROUGHNECK", "SCIENTIST"]
@@ -344,7 +328,7 @@ const charCareer = dictRandomKey(careerList);
 const charPrimeStat = careerList[charCareer]["keyAttribute"];
 const menuItemNumber = careerList[charCareer]["menuItemNumber"]
 // Race
-const charRace = dictRandomKey(raceList);
+const charRace = "synthetic";
 
 // Name
 const charName = nameGenerator();

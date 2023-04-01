@@ -1,0 +1,370 @@
+{
+    "name": "Ealen Balon",
+    "type": "character",
+    "folder": null,
+    "sort": 12000,
+    "system":
+    {
+        "header":
+        {
+            "health":
+            {
+                "value": 0,
+                "label": "Health",
+                "mod": 0,
+                "max": 4,
+                "calculatedMax": 4
+            },
+            "stress":
+            {
+                "value": 0,
+                "label": "Stress",
+                "mod": 0,
+                "max": 10
+            },
+            "npc": false
+        },
+        "attributes":
+        {
+            "str":
+            {
+                "value": 4,
+                "label": "Strength",
+                "mod": 4
+            },
+            "wit":
+            {
+                "value": 2,
+                "label": "Wits",
+                "mod": 2
+            },
+            "agl":
+            {
+                "value": 4,
+                "label": "Agility",
+                "mod": 4
+            },
+            "emp":
+            {
+                "value": 4,
+                "label": "Empathy",
+                "mod": 4
+            }
+        },
+        "skills":
+        {
+            "heavyMach":
+            {
+                "value": 1,
+                "label": "Heavy Machinery",
+                "ability": "str",
+                "description": "Heavy Machinery",
+                "mod": 5
+            },
+            "closeCbt":
+            {
+                "value": 1,
+                "label": "Close Combat",
+                "ability": "str",
+                "description": "Close Combat",
+                "mod": 5
+            },
+            "stamina":
+            {
+                "value": 1,
+                "label": "Stamina",
+                "ability": "str",
+                "description": "Stamina",
+                "mod": 5
+            },
+            "rangedCbt":
+            {
+                "value": 2,
+                "label": "Ranged Combat",
+                "ability": "agl",
+                "description": "Ranged Combat",
+                "mod": 6
+            },
+            "mobility":
+            {
+                "value": 0,
+                "label": "Mobility",
+                "ability": "agl",
+                "description": "Mobility",
+                "mod": 4
+            },
+            "piloting":
+            {
+                "value": 0,
+                "label": "Piloting",
+                "ability": "agl",
+                "description": "Piloting",
+                "mod": 4
+            },
+            "command":
+            {
+                "value": 1,
+                "label": "Command",
+                "ability": "emp",
+                "description": "Command",
+                "mod": 5
+            },
+            "manipulation":
+            {
+                "value": 2,
+                "label": "Manipulation",
+                "ability": "emp",
+                "description": "Manipulation",
+                "mod": 6
+            },
+            "medicalAid":
+            {
+                "value": 0,
+                "label": "Medical Aid",
+                "ability": "emp",
+                "description": "Medical Aid",
+                "mod": 4
+            },
+            "observation":
+            {
+                "value": 1,
+                "label": "Observation",
+                "ability": "wit",
+                "description": "Observation",
+                "mod": 3
+            },
+            "survival":
+            {
+                "value": 1,
+                "label": "Survival",
+                "ability": "wit",
+                "description": "Survival",
+                "mod": 3
+            },
+            "comtech":
+            {
+                "value": 0,
+                "label": "Comtech",
+                "ability": "wit",
+                "description": "Comtech",
+                "mod": 2
+            }
+        },
+        "general":
+        {
+            "career":
+            {
+                "value": "7",
+                "label": "career"
+            },
+            "appearance":
+            {
+                "value": "Relaxed and soothing voice",
+                "label": "appearance"
+            },
+            "sigItem":
+            {
+                "value": "ICC Commercial Flight Officer license",
+                "label": "sigItem"
+            },
+            "agenda":
+            {
+                "value": "You come from an officer family. You need to gain promotion an award—soon.",
+                "label": "agenda"
+            },
+            "relOne":
+            {
+                "value": "",
+                "label": "relOne"
+            },
+            "relTwo":
+            {
+                "value": "",
+                "label": "relTwo"
+            },
+            "xp":
+            {
+                "value": 0,
+                "max": 20,
+                "calculatedMax": 20
+            },
+            "sp":
+            {
+                "value": 0,
+                "max": 3
+            },
+            "radiation":
+            {
+                "value": 0,
+                "max": 10,
+                "calculatedMax": 10
+            },
+            "starving":
+            {
+                "value": 0,
+                "max": 1
+            },
+            "dehydrated":
+            {
+                "value": 0,
+                "max": 1,
+                "calculatedMax": 1
+            },
+            "exhausted":
+            {
+                "value": 0,
+                "max": 1,
+                "calculatedMax": 1
+            },
+            "freezing":
+            {
+                "value": 0,
+                "max": 1,
+                "calculatedMax": 1
+            },
+            "critInj":
+            {
+                "value": ""
+            },
+            "armor":
+            {
+                "value": 0,
+                "max": 10
+            },
+            "panic":
+            {
+                "value": 0,
+                "max": 1,
+                "lastRoll": 0,
+                "calculatedMax": 1
+            },
+            "cash":
+            {
+                "value": "800",
+                "label": "Number"
+            }
+        },
+        "consumables":
+        {
+            "air":
+            {
+                "value": 0,
+                "min": 0,
+                "max": 5
+            },
+            "power":
+            {
+                "value": 0,
+                "min": 0,
+                "max": 5
+            },
+            "food":
+            {
+                "value": 0,
+                "min": 0,
+                "max": 5
+            },
+            "water":
+            {
+                "value": 0,
+                "min": 0,
+                "max": 5
+            }
+        },
+        "notes": "<p>FindMe</p>",
+        "adhocitems": "\n  <p> - Rexim RXF-M5 EVA Pistol</p>\n  <p> - Binoculars</p>\n  <p> - IRC MK.50 compression suit</p>\n  <p> - IFF transponder</p>\n"
+    },
+    "items": [],
+    "flags":
+    {},
+    "prototypeToken":
+    {
+        "name": "Ealen Balon",
+        "displayName": 20,
+        "actorLink": true,
+        "texture":
+        {
+            "src": "icons/svg/mystery-man.svg",
+            "scaleX": 1,
+            "scaleY": 1,
+            "offsetX": 0,
+            "offsetY": 0,
+            "rotation": 0,
+            "tint": null
+        },
+        "width": 1,
+        "height": 1,
+        "lockRotation": false,
+        "rotation": 0,
+        "alpha": 1,
+        "disposition": 1,
+        "displayBars": 20,
+        "bar1":
+        {
+            "attribute": "header.health"
+        },
+        "bar2":
+        {
+            "attribute": "header.stress"
+        },
+        "light":
+        {
+            "alpha": 0.5,
+            "angle": 360,
+            "bright": 0,
+            "color": null,
+            "coloration": 1,
+            "dim": 0,
+            "attenuation": 0.5,
+            "luminosity": 0.5,
+            "saturation": 0,
+            "contrast": 0,
+            "shadows": 0,
+            "animation":
+            {
+                "type": null,
+                "speed": 5,
+                "intensity": 5,
+                "reverse": false
+            },
+            "darkness":
+            {
+                "min": 0,
+                "max": 1
+            }
+        },
+        "sight":
+        {
+            "enabled": false,
+            "range": null,
+            "angle": 360,
+            "visionMode": "basic",
+            "color": null,
+            "attenuation": 0.1,
+            "brightness": 0,
+            "saturation": 0,
+            "contrast": 0
+        },
+        "detectionModes": [],
+        "flags":
+        {},
+        "randomImg": false
+    },
+    "img": "icons/svg/mystery-man.svg",
+    "effects": [],
+    "ownership":
+    {
+        "default": 0,
+        "3eAStCv0v21fqZVU": 3
+    },
+    "_stats":
+    {
+        "systemId": "alienrpg",
+        "systemVersion": "3.0.4",
+        "coreVersion": "10.291",
+        "createdTime": 1680117708126,
+        "modifiedTime": 1680154641299,
+        "lastModifiedBy": "3eAStCv0v21fqZVU"
+    },
+    "_id": "DXf7ygBGQxrHdHhY"
+}

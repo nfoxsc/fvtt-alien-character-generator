@@ -1,0 +1,206 @@
+{
+    "_id": "EIvKN2Wjy09nR3x6",
+    "name": "Eco All-World Survival Suit",
+    "type": "armor",
+    "img": "modules/alienrpg-corerules/images/icons/kevlar-vest.svg",
+    "effects": [],
+    "folder": "oSEAUwgWvKj74IkQ",
+    "sort": 0,
+    "flags":
+    {
+        "core":
+        {
+            "sourceId": "Item.EcoCRX16XIJ7JzMl"
+        }
+    },
+    "system":
+    {
+        "header":
+        {
+            "active": false
+        },
+        "attributes":
+        {
+            "weight":
+            {
+                "value": 2,
+                "label": "Number"
+            },
+            "cost":
+            {
+                "value": "US$30,000.00",
+                "label": "Number"
+            },
+            "armorrating":
+            {
+                "value": "4",
+                "label": "Number"
+            },
+            "airsupply":
+            {
+                "value": 6,
+                "label": "Number"
+            },
+            "comment":
+            {
+                "value": "This EVA hard suit has fully-articulated rotary joints and self-actuating fingers, offering a limited range of mobility, but the maximum amount of protection from the hazards of space. The helmet has a sophisticated heads-up display built in, and the suit has its own thrusters for tether-free zero-G manoeuvres. The comm array on a standard Eco EVA Suit is unshielded, and thus sensitive to rogue transmissions. Armor Rating 4, Maximum Air Supply 6. Heavy Item.",
+                "label": "Text"
+            }
+        },
+        "modifiers":
+        {
+            "attributes":
+            {
+                "health":
+                {
+                    "value": 0,
+                    "label": "Health"
+                },
+                "stress":
+                {
+                    "value": 0,
+                    "label": "Stress"
+                },
+                "str":
+                {
+                    "value": 0,
+                    "label": "Strength"
+                },
+                "wit":
+                {
+                    "value": 0,
+                    "label": "Wits"
+                },
+                "agl":
+                {
+                    "value": 0,
+                    "label": "Agility"
+                },
+                "emp":
+                {
+                    "value": 0,
+                    "label": "Empathy"
+                }
+            },
+            "skills":
+            {
+                "heavyMach":
+                {
+                    "value": 0,
+                    "label": "Heavy Machinery",
+                    "ability": "str"
+                },
+                "closeCbt":
+                {
+                    "value": 0,
+                    "label": "Close Combat",
+                    "ability": "str"
+                },
+                "stamina":
+                {
+                    "value": 0,
+                    "label": "Stamina",
+                    "ability": "str"
+                },
+                "rangedCbt":
+                {
+                    "value": 0,
+                    "label": "Ranged Combat",
+                    "ability": "agl"
+                },
+                "mobility":
+                {
+                    "value": 0,
+                    "label": "Mobility",
+                    "ability": "agl"
+                },
+                "piloting":
+                {
+                    "value": 0,
+                    "label": "Piloting",
+                    "ability": "agl"
+                },
+                "command":
+                {
+                    "value": 0,
+                    "label": "Command",
+                    "ability": "emp"
+                },
+                "manipulation":
+                {
+                    "value": 0,
+                    "label": "Manipulation",
+                    "ability": "emp"
+                },
+                "medicalAid":
+                {
+                    "value": 0,
+                    "label": "Medical Aid",
+                    "ability": "emp"
+                },
+                "observation":
+                {
+                    "value": 0,
+                    "label": "Observation",
+                    "ability": "wit"
+                },
+                "survival":
+                {
+                    "value": 0,
+                    "label": "Survival",
+                    "ability": "wit"
+                },
+                "comtech":
+                {
+                    "value": 0,
+                    "label": "Comtech",
+                    "ability": "wit"
+                }
+            },
+            "agl":
+            {
+                "value": 0,
+                "label": "Agility"
+            },
+            "survival":
+            {
+                "value": 0,
+                "label": "Survival",
+                "ability": "wit"
+            },
+            "heavyMach":
+            {
+                "value": 0,
+                "label": "Heavy Machinery",
+                "ability": "str"
+            },
+            "closeCbt":
+            {
+                "value": 0,
+                "label": "Close Combat",
+                "ability": "str"
+            }
+        },
+        "notes":
+        {
+            "notes": ""
+        }
+    },
+    "ownership":
+    {
+        "default": 0,
+        "YEoPmwinvi5w1FW6": 3,
+        "M2aZuGY0mCdDk004": 3,
+        "H5UgzpFc3Xvp8xLJ": 3,
+        "KTgXQYOvdxaGdceE": 3
+    },
+    "_stats":
+    {
+        "systemId": "alienrpg",
+        "systemVersion": "3.0.4",
+        "coreVersion": "10.291",
+        "createdTime": 1661954249900,
+        "modifiedTime": 1674623629739,
+        "lastModifiedBy": "3eAStCv0v21fqZVU"
+    }
+}

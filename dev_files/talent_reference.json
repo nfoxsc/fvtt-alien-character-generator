@@ -1,0 +1,61 @@
+{
+    "_id": "308k4oAvOaYqKRFw",
+    "name": "Reckless",
+    "type": "talent",
+    "img": "modules/alienrpg-corerules/images/icons/fire-dash.svg",
+    "effects": [],
+    "folder": "2PpSokOh2N2RlV4M",
+    "sort": 0,
+    "flags":
+    {
+        "core":
+        {
+            "sourceId": "Compendium.alienrpg-corerules.alienrpg-talents-career.QRs5lpPiqdbWImyz"
+        }
+    },
+    "system":
+    {
+        "attributes":
+        {
+            "flag":
+            {
+                "value": 0,
+                "label": "Flag"
+            }
+        },
+        "general":
+        {
+            "career":
+            {
+                "value": "9",
+                "label": "career"
+            },
+            "comment":
+            {
+                "value": "<p>You live for the rush of adrenaline through your veins, pushing harder than others dare. You can push any skill roll based on Agility twice, not just once like other characters. Each push increases your Stress Level by one.</p>",
+                "label": "Text"
+            }
+        },
+        "notes":
+        {
+            "notes": ""
+        }
+    },
+    "ownership":
+    {
+        "default": 0,
+        "023AT5ERR8Ij00Wy": 3,
+        "M2aZuGY0mCdDk004": 3,
+        "H5UgzpFc3Xvp8xLJ": 3,
+        "KTgXQYOvdxaGdceE": 3
+    },
+    "_stats":
+    {
+        "systemId": "alienrpg",
+        "systemVersion": "3.0.4",
+        "coreVersion": "10.291",
+        "createdTime": 1661954249933,
+        "modifiedTime": 1674623629794,
+        "lastModifiedBy": "3eAStCv0v21fqZVU"
+    }
+}

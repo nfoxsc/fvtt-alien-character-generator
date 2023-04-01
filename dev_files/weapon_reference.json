@@ -1,0 +1,101 @@
+{
+    "_id": "2fYAyupQLQw21T1X",
+    "name": "UA 571-C Sentry Gun",
+    "type": "weapon",
+    "img": "modules/alienrpg-corerules/images/icons/sentry-gun.svg",
+    "effects": [],
+    "folder": "JYirzyxliTQBq1kT",
+    "sort": 0,
+    "flags":
+    {
+        "core":
+        {
+            "sourceId": "Compendium.alienrpg-corerules.alienrpg-weapons.BnH2z52vIk8GHAyd"
+        }
+    },
+    "system":
+    {
+        "header":
+        {
+            "type":
+            {
+                "value": "1",
+                "label": "Text"
+            },
+            "active": false
+        },
+        "attributes":
+        {
+            "bonus":
+            {
+                "value": 2,
+                "label": "Number"
+            },
+            "damage":
+            {
+                "value": 4,
+                "label": "Number"
+            },
+            "weight":
+            {
+                "value": 0,
+                "label": "Number"
+            },
+            "cost":
+            {
+                "value": "$12,000.00",
+                "label": "Number"
+            },
+            "range":
+            {
+                "value": "1",
+                "label": "Text"
+            },
+            "class":
+            {
+                "value": "Heavy",
+                "label": "Text"
+            },
+            "rounds":
+            {
+                "value": 0,
+                "label": "Number"
+            },
+            "power":
+            {
+                "value": 0,
+                "label": "Number"
+            },
+            "comment":
+            {
+                "value": "Armor piercing, full auto, Ranged Combat 8.\n\nThese tripod-mounted robot sentries form an automated perimeter defence system that tracks and automatically fires upon any target that moves within range. The UA 571 series is equipped with automatic thermal and movement actuated AI targeting capabilities. The UA 571-C utilizes an M30 Autocannon. Just be mindful of your friend or foe settings before walking in front of one. Those set up with ARS-Advanced Recognition Software-can be programmed to identify friendly targets with a variable success rate. If set for motion and heat only, anything hot that moves might as well be dead. When activated, the Sentry Gun is always in overwatch position and fires with skill level 8 in Ranged Combat (no Agility). The Sentry Gun can also be operated remotely by using a Head Mounted Sight.",
+                "label": "Text"
+            },
+            "quantity":
+            {
+                "value": 1
+            }
+        },
+        "notes":
+        {
+            "notes": null
+        }
+    },
+    "ownership":
+    {
+        "default": 0,
+        "YEoPmwinvi5w1FW6": 3,
+        "M2aZuGY0mCdDk004": 3,
+        "H5UgzpFc3Xvp8xLJ": 3,
+        "KTgXQYOvdxaGdceE": 3
+    },
+    "_stats":
+    {
+        "systemId": "alienrpg",
+        "systemVersion": "3.0.4",
+        "coreVersion": "10.291",
+        "createdTime": 1661954249921,
+        "modifiedTime": 1674623629790,
+        "lastModifiedBy": "3eAStCv0v21fqZVU"
+    }
+}

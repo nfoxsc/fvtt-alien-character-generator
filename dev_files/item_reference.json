@@ -1,0 +1,202 @@
+{
+    "_id": "RXoOYCDBu6LJtdC8",
+    "name": "Beer",
+    "type": "item",
+    "img": "modules/alienrpg-corerules/images/icons/backpack.svg",
+    "effects": [],
+    "folder": "2qZt3vvdmV7PHBkQ",
+    "sort": 0,
+    "flags":
+    {
+        "core":
+        {
+            "sourceId": "Item.ywqTlkSLQLbarajk"
+        }
+    },
+    "system":
+    {
+        "header":
+        {
+            "type":
+            {
+                "value": "7",
+                "label": "Text"
+            },
+            "active": false
+        },
+        "attributes":
+        {
+            "weight":
+            {
+                "value": 0.25,
+                "label": "Number"
+            },
+            "cost":
+            {
+                "value": "US$4.00",
+                "label": "Number"
+            },
+            "comment":
+            {
+                "value": "Time to get your buzz on. Alcohol remains the old go to. The beer of choice on the frontier is Weyland-Yutani's original and genuine \"extra strong\" Aspen beer. It's watered won and tastes like piss, but it gets the job done-and it's better than that Souta Dry crap. Each drink decreases your Stress Level one step, but also give you a -1 modification to all Wits based skills for the next Shift",
+                "label": "Text"
+            },
+            "food":
+            {
+                "value": 0,
+                "label": "Number"
+            },
+            "water":
+            {
+                "value": 0,
+                "label": "Number"
+            },
+            "power":
+            {
+                "value": 0,
+                "label": "Stress"
+            },
+            "airsupply":
+            {
+                "value": 0,
+                "label": "Number"
+            },
+            "quantity":
+            {
+                "value": 1
+            },
+            "notes":
+            {
+                "notes": ""
+            }
+        },
+        "modifiers":
+        {
+            "attributes":
+            {
+                "health":
+                {
+                    "value": 0,
+                    "label": "Health"
+                },
+                "stress":
+                {
+                    "value": -1,
+                    "label": "Stress"
+                },
+                "str":
+                {
+                    "value": 0,
+                    "label": "Strength"
+                },
+                "wit":
+                {
+                    "value": 0,
+                    "label": "Wits"
+                },
+                "agl":
+                {
+                    "value": 0,
+                    "label": "Agility"
+                },
+                "emp":
+                {
+                    "value": 0,
+                    "label": "Empathy"
+                }
+            },
+            "skills":
+            {
+                "heavyMach":
+                {
+                    "value": 0,
+                    "label": "Heavy Machinery",
+                    "ability": "str"
+                },
+                "closeCbt":
+                {
+                    "value": 0,
+                    "label": "Close Combat",
+                    "ability": "str"
+                },
+                "stamina":
+                {
+                    "value": 0,
+                    "label": "Stamina",
+                    "ability": "str"
+                },
+                "rangedCbt":
+                {
+                    "value": 0,
+                    "label": "Ranged Combat",
+                    "ability": "agl"
+                },
+                "mobility":
+                {
+                    "value": 0,
+                    "label": "Mobility",
+                    "ability": "agl"
+                },
+                "piloting":
+                {
+                    "value": 0,
+                    "label": "Piloting",
+                    "ability": "agl"
+                },
+                "command":
+                {
+                    "value": 0,
+                    "label": "Command",
+                    "ability": "emp"
+                },
+                "manipulation":
+                {
+                    "value": 0,
+                    "label": "Manipulation",
+                    "ability": "emp"
+                },
+                "medicalAid":
+                {
+                    "value": 0,
+                    "label": "Medical Aid",
+                    "ability": "emp"
+                },
+                "observation":
+                {
+                    "value": -1,
+                    "label": "Observation",
+                    "ability": "wit"
+                },
+                "survival":
+                {
+                    "value": -1,
+                    "label": "Survival",
+                    "ability": "wit"
+                },
+                "comtech":
+                {
+                    "value": -1,
+                    "label": "Comtech",
+                    "ability": "wit"
+                }
+            }
+        }
+    },
+    "ownership":
+    {
+        "default": 0,
+        "YEoPmwinvi5w1FW6": 3,
+        "M2aZuGY0mCdDk004": 3,
+        "H5UgzpFc3Xvp8xLJ": 3,
+        "KTgXQYOvdxaGdceE": 3
+    },
+    "_stats":
+    {
+        "systemId": "alienrpg",
+        "systemVersion": "3.0.4",
+        "coreVersion": "10.291",
+        "createdTime": 1661954249903,
+        "modifiedTime": 1674623629748,
+        "lastModifiedBy": "3eAStCv0v21fqZVU"
+    }
+}
