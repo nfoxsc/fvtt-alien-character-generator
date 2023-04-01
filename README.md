@@ -15,6 +15,7 @@ Basic Character generator for the Alien RPG game via Foundry VTT. Copy the macro
   - Force Synthetic Race
 
 ## To-Dos:
+ - Module work has begun, button added to the tab but does not execute anything at this time.
  - Look into adding Items and Talents into proper place within the character sheet.
      - May be needs an alternate version if installed system does not have the official modules
  - Convert into a Module with better control over options
