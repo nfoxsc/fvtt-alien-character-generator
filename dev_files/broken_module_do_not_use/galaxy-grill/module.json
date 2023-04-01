@@ -17,7 +17,7 @@
   "systems": [{
     "id": "",
     "type": "system",
-    "manifest": "",
+    "manifest": "https://raw.githubusercontent.com/nfoxsc/fvtt-alien-character-generator/main/dev_files/broken_module_do_not_use/galaxy-grill/module.json",
     "compatibility": {
       "verified": ""
     }
