@@ -307,6 +307,17 @@ Hooks.on("renderActorDirectory", (_app, html) => {
             const charCash = cash(charCareer);
             // Items
             const charSignatureItem = dictRandomValue(careerList[charCareer]["signatureItem"]);
+            let charItems = [];
+            for (var i = 1; i <= 4; i++) {
+                let itemList = "item" + i;
+                charItems.push(dictRandomValue(careerList[charCareer]["gear"][itemList]));
+            };
+            let adHocItems = `
+              <p> - ${charItems[0]}</p>
+              <p> - ${charItems[1]}</p>
+              <p> - ${charItems[2]}</p>
+              <p> - ${charItems[3]}</p>
+            `;
             //  Attributes
             const attributesList = ["Strength", "Wits", "Agility", "Empathy"]
             let attributesScores = [];
@@ -360,11 +371,25 @@ Hooks.on("renderActorDirectory", (_app, html) => {
                     skillList[s]["value"] += 0;
                 }
             };
+            // Talents
+            let careerTalentList = `
+              <p> - ${careerList[charCareer]["careerTalents"][0]}</p>
+              <p> - ${careerList[charCareer]["careerTalents"][1]}</p>
+              <p> - ${careerList[charCareer]["careerTalents"][2]}</p>
+            `;
+
             let actor = Actor.create({
                 name: charName,
                 type: charRace,
                 folder: null,
                 sort: 12000,
+                header: {
+                    "health":
+                    {
+                        "value": attributesScores["Strength"],
+                        "max": attributesScores["Strength"]
+                    }
+                },
                 system: {
                     "attributes": {
                         "str": {
@@ -463,7 +488,9 @@ Hooks.on("renderActorDirectory", (_app, html) => {
                         "cash": {
                             "value": `${charCash}`,
                         }
-                    }
+                    },
+                    "notes": careerTalentList,
+                    "adhocitems": adHocItems
                 },
                 token: {},
                 items: [],
