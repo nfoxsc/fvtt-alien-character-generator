@@ -153,6 +153,81 @@ const careerList = {
     }
 };
 
+let skillList = {
+    "heavyMach": {
+        "label": "Heavy Machinery",
+        "value": 0,
+        "mod": 1,
+        "ability": "str"
+    },
+    "closeCbt": {
+        "label": "Close Combat",
+        "value": 0,
+        "mod": 1,
+        "ability": "str"
+    },
+    "stamina": {
+        "label": "Stamina",
+        "value": 0,
+        "mod": 1,
+        "ability": "str"
+    },
+    "observation": {
+        "label": "Observation",
+        "value": 0,
+        "mod": 2,
+        "ability": "wit"
+    },
+    "survival": {
+        "label": "Survival",
+        "value": 0,
+        "mod": 2,
+        "ability": "wit"
+    },
+    "comtech": {
+        "label": "Comtech",
+        "value": 0,
+        "mod": 2,
+        "ability": "wit"
+    },
+    "rangedCbt": {
+        "label": "Ranged Combat",
+        "value": 0,
+        "mod": 3,
+        "ability": "agl"
+    },
+    "mobility": {
+        "label": "Mobility",
+        "value": 0,
+        "mod": 3,
+        "ability": "agl"
+    },
+    "piloting": {
+        "label": "Piloting",
+        "value": 0,
+        "mod": 3,
+        "ability": "agl"
+    },
+    "command": {
+        "label": "Command",
+        "value": 0,
+        "mod": 4,
+        "ability": "emp"
+    },
+    "manipulation": {
+        "label": "Manipulation",
+        "value": 0,
+        "mod": 4,
+        "ability": "emp"
+    },
+    "medicalAid": {
+        "label": "Medical Aid",
+        "value": 0,
+        "mod": 4,
+        "ability": "emp"
+    }
+};
+
 // Random Key from Dictionary
 function dictRandomKey(dict) {
     const keys = Object.keys(dict)
@@ -256,8 +331,28 @@ Hooks.on("renderActorDirectory", (_app, html) => {
                     charAttributes.push(roll);
                     attributesScores[attributesList[0]] = roll;
                     attributesList.shift(attributesList[0]);
-                }                
-            }
+                }
+            };
+            // Skills
+            let skillsTotal = 0;
+
+            for (var i = 0; i < 3; i++) {
+                let skill = careerList[charCareer]["keySkills"][i];
+                let skillRoll = Math.floor(Math.random() * 2) + 1;
+                skillsTotal += skillRoll;
+                skillList[skill]["value"] += skillRoll;
+            };
+
+            for (var s in skillList) {
+                if (skillsTotal < 10) {
+                    let skillRoll = Math.floor(Math.random() * 2) + 1;
+                    skillsTotal += skillRoll;
+                    skillList[s]["value"] += skillRoll;
+                } else {
+                    skillsTotal += 0;
+                    skillList[s]["value"] += 0;
+                }
+            };
 
             //for (var i = 0; i < 3; i++) {
             //    rollAttributes(attributesList[0]);
@@ -268,6 +363,80 @@ Hooks.on("renderActorDirectory", (_app, html) => {
                 folder: null,
                 sort: 12000,
                 system: {
+                    "skills": {
+                        "heavyMach": {
+                            "label": "Heavy Machinery",
+                            "value": 0,
+                            "mod": 1,
+                            "ability": "str"
+                        },
+                        "closeCbt": {
+                            "label": "Close Combat",
+                            "value": 0,
+                            "mod": 1,
+                            "ability": "str"
+                        },
+                        "stamina": {
+                            "label": "Stamina",
+                            "value": 0,
+                            "mod": 1,
+                            "ability": "str"
+                        },
+                        "observation": {
+                            "label": "Observation",
+                            "value": 0,
+                            "mod": 2,
+                            "ability": "wit"
+                        },
+                        "survival": {
+                            "label": "Survival",
+                            "value": 0,
+                            "mod": 2,
+                            "ability": "wit"
+                        },
+                        "comtech": {
+                            "label": "Comtech",
+                            "value": 0,
+                            "mod": 2,
+                            "ability": "wit"
+                        },
+                        "rangedCbt": {
+                            "label": "Ranged Combat",
+                            "value": 0,
+                            "mod": 3,
+                            "ability": "agl"
+                        },
+                        "mobility": {
+                            "label": "Mobility",
+                            "value": 0,
+                            "mod": 3,
+                            "ability": "agl"
+                        },
+                        "piloting": {
+                            "label": "Piloting",
+                            "value": 0,
+                            "mod": 3,
+                            "ability": "agl"
+                        },
+                        "command": {
+                            "label": "Command",
+                            "value": 0,
+                            "mod": 4,
+                            "ability": "emp"
+                        },
+                        "manipulation": {
+                            "label": "Manipulation",
+                            "value": 0,
+                            "mod": 4,
+                            "ability": "emp"
+                        },
+                        "medicalAid": {
+                            "label": "Medical Aid",
+                            "value": 0,
+                            "mod": 4,
+                            "ability": "emp"
+                        }
+                    },
                     "attributes": {
                         "str": {
                             "value": attributesScores["Strength"],
