@@ -143,6 +143,8 @@ const careerList = {
     }
 };
 
+const raceList = ["character", "synthetic"];
+
 let skillList = {
     "heavyMach": {
         "label": "Heavy Machinery",
@@ -218,7 +220,6 @@ let skillList = {
     }
 };
 
-const raceList = ["character", "synthetic"];
 
 // Random Key from Dictionary
 function dictRandomKey(dict) {
@@ -239,7 +240,7 @@ function listRandom(list) {
     return list[Math.floor((Math.random() * list.length))];
 };
 
-export function nameGenerator() {
+function nameGenerator() {
     name = listRandom(nameList["First"]).concat(" ", listRandom(nameList["Last"]));
     return name;
 };
@@ -247,13 +248,13 @@ export function nameGenerator() {
 // Roll Attributes
 function rollAttributes(stat) {
     if (charAttributes.length >= 2 && charAttributes.length <= 3 && parseInt(statTotal) <= 8) {
-        let roll = 10 - parseInt(statTotal);
+        roll = 10 - parseInt(statTotal);
         statTotal += roll;
         charAttributes.push(roll);
         attributesScores[stat] = roll;
         attributesList.shift(stat);
     } else if (charAttributes.length >= 3 && parseInt(statTotal) < 14) {
-        let roll = 14 - parseInt(statTotal);
+        roll = 14 - parseInt(statTotal);
         statTotal += roll;
         charAttributes.push(roll);
         attributesScores[stat] = roll;
@@ -269,7 +270,7 @@ function rollAttributes(stat) {
 
 function assignPrimeStat(stat, race) {
     if (race == "character") {
-        let roll = 4;
+        roll = 4;
         statTotal += roll;
         charAttributes.push(4);
         attributesScores[stat] = 4;
@@ -277,7 +278,7 @@ function assignPrimeStat(stat, race) {
         attributesList.splice(primeStat, 1);
         return roll;
     } else {
-        let roll = 5;
+        roll = 5;
         statTotal += roll;
         charAttributes.push(5);
         attributesScores[stat] = 5;
@@ -314,116 +315,132 @@ function cash(career) {
         return money;
     }
 };
-// Career
-const charCareer = dictRandomKey(careerList);
-const charPrimeStat = careerList[charCareer]["keyAttribute"];
-const menuItemNumber = careerList[charCareer]["menuItemNumber"]
-// Race
-const charRace = listRandom(raceList);
+// add buttons to menu
+Hooks.on("renderActorDirectory", (_app, html) => {
+    if (game.user.isGM) {
+        const random = jQuery(`<button class="generateRandom-btn"><i class="fas fa-pepper-hot"></i> Order the Special</button>`);
+        html.find(".generateRandom-btn").remove();
 
-// Name
-const charName = nameGenerator();
+        html.find(".directory-footer").append(random);
+        random.on("click", (ev) => {
+            // Career
+            const charCareer = dictRandomKey(careerList);
+            const charPrimeStat = careerList[charCareer]["keyAttribute"];
+            const menuItemNumber = careerList[charCareer]["menuItemNumber"]
+            // Race
+            const charRace = listRandom(raceList);
 
-// Appearance
-const charAppearance = dictRandomValue(careerList[charCareer]["appearance"]);
+            // Name
+            const charName = nameGenerator();
 
-// Agenda
-const charAgenda = dictRandomValue(careerList[charCareer]["agenda"]);
+            // Appearance
+            const charAppearance = dictRandomValue(careerList[charCareer]["appearance"]);
 
-// Items
-const charSignatureItem = dictRandomValue(careerList[charCareer]["signatureItem"]);
-let charItems = []
-for (var i = 1; i <= 4; i++) {
-    let itemList = "item" + i;
-    charItems.push(dictRandomValue(careerList[charCareer]["gear"][itemList]));
-};
-let adHocItems = `
+            // Agenda
+            const charAgenda = dictRandomValue(careerList[charCareer]["agenda"]);
+
+            // Items
+            const charSignatureItem = dictRandomValue(careerList[charCareer]["signatureItem"]);
+            let charItems = []
+            for (var i = 1; i <= 4; i++) {
+                itemList = "item" + i;
+                charItems.push(dictRandomValue(careerList[charCareer]["gear"][itemList]));
+            };
+            let adHocItems = `
   <p> - ${charItems[0]}</p>
   <p> - ${charItems[1]}</p>
   <p> - ${charItems[2]}</p>
   <p> - ${charItems[3]}</p>
 `;
 
-// Cash
-const charCash = cash(charCareer);
-
-// Talents
-let careerTalentList = `
+            // Cash
+            const charCash = cash(charCareer);
+            // Talents
+            let careerTalentList = `
   <p> - ${careerList[charCareer]["careerTalents"][0]}</p>
   <p> - ${careerList[charCareer]["careerTalents"][1]}</p>
   <p> - ${careerList[charCareer]["careerTalents"][2]}</p>
 `;
 
+            // Skills
+            let skillsTotal = 0;
 
-// Skills
-let skillsTotal = 0;
+            for (var i = 0; i < 3; i++) {
+                rollCareerSkills(careerList[charCareer]["keySkills"][i]);
+            };
 
-for (var i = 0; i < 3; i++) {
-    rollCareerSkills(careerList[charCareer]["keySkills"][i]);
-};
+            for (var s in skillList) {
+                if (skillsTotal < 10) {
+                    rollSkills(s);
+                } else {
+                    skillsTotal += 0;
+                    skillList[s]["value"] += 0;
+                }
+            };
 
-for (var s in skillList) {
-    if (skillsTotal < 10) {
-        rollSkills(s);
-    } else {
-        skillsTotal += 0;
-        skillList[s]["value"] += 0;
+            //  Attributes
+            let attributesList = ["Strength", "Wits", "Agility", "Empathy"]
+            let attributesScores = [];
+            let charAttributes = [];
+            let statTotal = 0;
+
+            assignPrimeStat(charPrimeStat, charRace);
+            for (var i = 0; i < 3; i++) {
+                rollAttributes(attributesList[0]);
+            };
+
+            let newValues = {
+                name: charName,
+                type: charRace,
+                folder: null,
+                sort: 12000,
+                system: {
+                    "attributes": {
+                        "str": {
+                            "value": `${attributesScores["Strength"]}`,
+                        },
+                        "wit": {
+                            "value": `${attributesScores["Wits"]}`,
+                        },
+                        "agl": {
+                            "value": `${attributesScores["Agility"]}`,
+
+                        },
+                        "emp": {
+                            "value": `${attributesScores["Empathy"]}`,
+                        }
+                    },
+                    "skills": skillList,
+                    "general": {
+                        "career": {
+                            "value": `${menuItemNumber}`,
+                            "label": "career"
+                        },
+                        "appearance": {
+                            "value": `${charAppearance}`,
+                            "label": "appearance"
+                        },
+                        "sigItem": {
+                            "value": `${charSignatureItem}`,
+                            "label": "sigItem"
+                        },
+                        "agenda": {
+                            "value": `${charAgenda}`,
+                            "label": "agenda"
+                        },
+                        "cash": {
+                            "value": `${charCash}`,
+                        }
+                    },
+                    "notes": `${adHocItems}`,
+                    "adhocitems": `${careerTalentList}`
+                }
+            };
+
+            // Create the actor
+            let newNPC = await Actor.create(newValues);
+
+        });
+        newNPC.sheet.render(true);
     }
-};
-
-//  Attributes
-let attributesList = ["Strength", "Wits", "Agility", "Empathy"]
-let attributesScores = [];
-let charAttributes = [];
-let statTotal = 0;
-
-assignPrimeStat(charPrimeStat, charRace);
-for (var i = 0; i < 3; i++) {
-    rollAttributes(attributesList[0]);
-};
-
-//
-// Set up the array to create the character
-//
-
-// Now set up the base array
-let newValues = {
-    name: charName,
-    type: charRace,
-    folder: null,
-    sort: 12000,
-    system: {},
-    token: {},
-    items: [],
-    flags: {},
-};
-// build out the array with the derived data
-setProperty(newValues, 'system.attributes.str.value', `${attributesScores["Strength"]}`);
-setProperty(newValues, 'system.attributes.wit.value', `${attributesScores["Wits"]}`);
-setProperty(newValues, 'system.attributes.agl.value', `${attributesScores["Agility"]}`);
-setProperty(newValues, 'system.attributes.emp.value', `${attributesScores["Empathy"]}`);
-
-for (s in skillList) {
-    setProperty(newValues, `system.skills.${s}.value`, `${skillList[s]["value"]}`);
-    setProperty(newValues, `system.skills.${s}.label`, `${skillList[s]["label"]}`);
-    setProperty(newValues, `system.skills.${s}.ability`, `${skillList[s]["ability"]}`);
-    setProperty(newValues, `system.skills.${s}.description`, `${skillList[s]["label"]}`);
-    setProperty(newValues, `system.skills.${s}.mod`, `${skillList[s]["mod"]}`);
-};
-
-setProperty(newValues, 'system.general.career.value', `${menuItemNumber}`);
-setProperty(newValues, 'system.general.agenda.value', `${charAgenda}`);
-setProperty(newValues, 'system.general.appearance.value', `${charAppearance}`);
-setProperty(newValues, 'system.general.cash.value', `${charCash}`);
-setProperty(newValues, 'system.general.sigItem.value', `${charSignatureItem}`);
-
-setProperty(newValues, 'system.adhocitems', `${adHocItems}`);
-setProperty(newValues, 'system.notes', `${careerTalentList}`);
-
-// Create the actor
-let newNPC = await Actor.create(newValues);
-
-//return newValues;
-
-// and display it
-newNPC.sheet.render(true);
+});
