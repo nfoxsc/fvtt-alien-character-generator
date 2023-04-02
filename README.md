@@ -24,7 +24,7 @@ Basic Character generator for the Alien RPG game via Foundry VTT. Copy the macro
  - Clean up Code
 
  ## NOTE:
- Names Shamelessly taken from 
+ Last Names and UI Buttonw code Shamelessly taken from:
 - Not Enough NPCs: A 5e NPC Generator (https://github.com/ardittristan/VTTNPCGen) because ardittristan made something wonderful that made life easier and now I want that same thing for another game.
 
 Thanks to pwatson100 for helping me get the character sheet generation working!
