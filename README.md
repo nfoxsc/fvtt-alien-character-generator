@@ -7,15 +7,16 @@ Basic Character generator for the Alien RPG game via Foundry VTT. Copy the macro
 #### Random_Generator_macro
   - Random between Character (Human) and Synthetic
 
-#### Character_Generator_macro rename 
+#### Character_Generator_macro 
 
   - Force Character (Human) Race
 
-#### Synthetic_Generaton_macro rename
+#### Synthetic_Generaton_macro
   - Force Synthetic Race
 
 ## To-Dos:
- - Module work has begun, button added to the tab but does not execute anything at this time.
+ - Module throws error but appears to work as expected:
+    - ReferenceError: Error thrown in hooked function '' for hook 'renderActorDirectory'. actor is not defined
  - Look into adding Items and Talents into proper place within the character sheet.
      - May be needs an alternate version if installed system does not have the official modules
  - Convert into a Module with better control over options
@@ -24,7 +25,7 @@ Basic Character generator for the Alien RPG game via Foundry VTT. Copy the macro
  - Clean up Code
 
  ## NOTE:
- Names Shamelessly taken from 
+ Last Names and UI Buttonw code Shamelessly taken from:
 - Not Enough NPCs: A 5e NPC Generator (https://github.com/ardittristan/VTTNPCGen) because ardittristan made something wonderful that made life easier and now I want that same thing for another game.
 
 Thanks to pwatson100 for helping me get the character sheet generation working!
