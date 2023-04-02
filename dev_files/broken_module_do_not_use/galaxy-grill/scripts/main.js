@@ -179,61 +179,6 @@ function nameGenerator() {
     return name;
 };
 
-// Roll Attributes
-function rollAttributes(stat) {
-    if (charAttributes.length >= 2 && charAttributes.length <= 3 && parseInt(statTotal) <= 8) {
-        let roll = 10 - parseInt(statTotal);
-        statTotal += roll;
-        charAttributes.push(roll);
-        attributesScores[stat] = roll;
-        attributesList.shift(stat);
-    } else if (charAttributes.length >= 3 && parseInt(statTotal) < 14) {
-        let roll = 14 - parseInt(statTotal);
-        statTotal += roll;
-        charAttributes.push(roll);
-        attributesScores[stat] = roll;
-        attributesList.shift(stat);
-    } else {
-        let roll = Math.floor(Math.random() * 3) + 2;
-        statTotal += roll;
-        charAttributes.push(roll);
-        attributesScores[stat] = roll;
-        attributesList.shift(stat);
-    }
-};
-
-function assignPrimeStat(stat, race) {
-    if (race == "character") {
-        let roll = 4;
-        statTotal += roll;
-        charAttributes.push(4);
-        attributesScores[stat] = 4;
-        let primeStat = attributesList.indexOf(stat);
-        attributesList.splice(primeStat, 1);
-        return roll;
-    } else {
-        let roll = 5;
-        statTotal += roll;
-        charAttributes.push(5);
-        attributesScores[stat] = 5;
-        let primeStat = attributesList.indexOf(stat);
-        attributesList.splice(primeStat, 1);
-        return roll;
-    }
-};
-
-// Random Skills
-function rollSkills(skill) {
-    skillsTotal += 1;
-    skillList[skill]["value"] += 1;
-};
-
-function rollCareerSkills(skill) {
-    let skillRoll = Math.floor(Math.random() * 2) + 1;
-    skillsTotal += skillRoll;
-    skillList[skill]["value"] += skillRoll;
-};
-
 function cash(career) {
     const upper = ["COMPANY AGENT", "OFFICER"]
     const middle = ["COLONIAL MARINE", "COLONIAL MARSHAL", "MEDIC", "PILOT", "ROUGHNECK", "SCIENTIST"]
@@ -279,11 +224,44 @@ Hooks.on("renderActorDirectory", (_app, html) => {
             let attributesScores = [];
             let charAttributes = [];
             let statTotal = 0;
-
-            assignPrimeStat(charPrimeStat, charRace);
+            if (charRace == "character") {
+                attributesScores[charPrimeStat] = 4;
+                let primeStat = attributesList.indexOf(charPrimeStat);
+                attributesList.splice(primeStat, 1);
+                charAttributes.push(4);
+                statTotal += 4;
+            } else {
+                attributesScores[charPrimeStat] = 5;
+                let primeStat = attributesList.indexOf(charPrimeStat);
+                attributesList.splice(primeStat, 1);
+                charAttributes.push(5);
+                statTotal += 5;
+            }
             for (var i = 0; i < 3; i++) {
-                rollAttributes(attributesList[0]);
-            };
+                if (charAttributes.length >= 2 && charAttributes.length <= 3 && parseInt(statTotal) <= 8) {
+                    let roll = 10 - parseInt(statTotal);
+                    statTotal += roll;
+                    charAttributes.push(roll);
+                    attributesScores[attributesList[0]] = roll;
+                    attributesList.shift(attributesList[0]);
+                } else if (charAttributes.length >= 3 && parseInt(statTotal) < 14) {
+                    let roll = 14 - parseInt(statTotal);
+                    statTotal += roll;
+                    charAttributes.push(roll);
+                    attributesScores[attributesList[0]] = roll;
+                    attributesList.shift(attributesList[0]);
+                } else {
+                    let roll = Math.floor(Math.random() * 3) + 2;
+                    statTotal += roll;
+                    charAttributes.push(roll);
+                    attributesScores[attributesList[0]] = roll;
+                    attributesList.shift(attributesList[0]);
+                }                
+            }
+
+            //for (var i = 0; i < 3; i++) {
+            //    rollAttributes(attributesList[0]);
+            //};
             let actor = Actor.create({
                 name: charName,
                 type: charRace,
@@ -323,7 +301,7 @@ Hooks.on("renderActorDirectory", (_app, html) => {
                             "label": "agenda"
                         },
                         "cash": {
-                            "value": `${charCash}`,
+                            "value": `${statTotal}`,
                         }
                     }
                 },
